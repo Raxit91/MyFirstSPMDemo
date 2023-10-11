@@ -20,7 +20,7 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "MyFirstSPMDemo",
-            dependencies: ["Amplitude", "Datadog"]),
+            dependencies: ["dd-sdk-ios", "Amplitude-iOS"]),
         .testTarget(
             name: "MyFirstSPMDemoTests",
             dependencies: ["MyFirstSPMDemo"]),
